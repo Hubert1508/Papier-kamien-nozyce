@@ -130,9 +130,9 @@ for (let i = 0; i < acctionButton.length; i++) {
 
   addPlayerName.onclick = function(){
 
-    let valueInput = document.querySelector("#player-name").value;
+    let valueInput = document.querySelector("#player-name");
 
-    if(valueInput===""){
+    if(valueInput.value===""){
 
         alert("Podaj nazwę gracza!");
 
@@ -140,9 +140,14 @@ for (let i = 0; i < acctionButton.length; i++) {
 
     }else{
 
-        localStorage.setItem("playerName", valueInput);
+        localStorage.setItem("playerName", valueInput.value);
 
         let acctionButton = document.querySelectorAll(".acction-button");
+
+        addPlayerName.style.display = "none";
+        valueInput.setAttribute("disabled", "disbaled");
+        
+        
 
         for (let i = 0; i < acctionButton.length; i++){
 
@@ -152,6 +157,14 @@ for (let i = 0; i < acctionButton.length; i++) {
 
     }
 
+  }
+
+  let newGame = document.querySelector("#new-game");
+
+  newGame.onclick = function(){
+
+    document.location.href = 'index.html';
+    
   }
 
   
