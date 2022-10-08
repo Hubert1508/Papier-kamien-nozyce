@@ -8,6 +8,10 @@
 
 	<link rel="stylesheet" href="style.css" type="text/css"/>
 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">	
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -17,7 +21,16 @@
 </head>
 <body>
 
+	<p class="pkt">Punkty:
+
+		<input id="pkt" class="pkt" value="0" disabled/>
+
+	</p>
+
 	<section id="header">
+		
+		
+		
 
 		<div class="options">
 
@@ -29,8 +42,8 @@
 		
 		<div class="informations">
 
-			<p class="name" id="player">Gracz:</p>
-			<p class="name" id="result">Komputer:</p>
+			<p class="name" id="player">🧍‍♂️Gracz:</p>
+			<p class="name" id="result">💻Komputer:</p>
 			<p class="wynik" id="wynik">Wynik:</p>
 
 			<input id="player-name" type="text" placeholder="Wpisz swoje Imię" />

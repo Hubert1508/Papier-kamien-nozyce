@@ -5,8 +5,7 @@ window.onload = function(){
     for (let i = 0; i < acctionButton.length; i++){
 
         acctionButton[i].style.display = "none";
-    }
-    
+    }    
 }
 
 let acctionButton = document.querySelectorAll(".acction-button");
@@ -35,6 +34,8 @@ for (let i = 0; i < acctionButton.length; i++) {
         let przegrana = "Przegrana!";
         let remis = "Remis!";
 
+        let pkt = document.querySelector("#pkt");
+
         if(computerPlayer===0){
 
             result.innerHTML= "Komputer: "+ papier;
@@ -50,11 +51,15 @@ for (let i = 0; i < acctionButton.length; i++) {
 
                 wynik.innerHTML ="Wynik: "+  przegrana;
 
+                pkt.innerHTML = pkt.value--;
+
             }
 
             else if(computerPlayer===0 && valueButton===nozyce){
 
                 wynik.innerHTML ="Wynik: "+  wygrana;
+
+                pkt.innerHTML = pkt.value++;
 
             }
 
@@ -75,11 +80,15 @@ for (let i = 0; i < acctionButton.length; i++) {
 
                 wynik.innerHTML ="Wynik: "+  wygrana;
 
+                pkt.innerHTML = pkt.value++;
+
             }
 
             else if(computerPlayer===1 && valueButton===nozyce){
 
                 wynik.innerHTML ="Wynik: "+  przegrana;
+
+                pkt.innerHTML = pkt.value--;
 
             }
 
@@ -100,11 +109,15 @@ for (let i = 0; i < acctionButton.length; i++) {
 
                 wynik.innerHTML ="Wynik: "+  przegrana;
 
+                pkt.innerHTML = pkt.value--;
+
             }
 
             else if(computerPlayer===2 && valueButton===kamien){
 
                 wynik.innerHTML ="Wynik: "+  wygrana;
+
+                pkt.innerHTML = pkt.value++;
 
             }
         }
