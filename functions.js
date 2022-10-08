@@ -138,7 +138,17 @@ for (let i = 0; i < acctionButton.length; i++) {
 
         return false;
 
-    }else{
+    }
+
+    else if(valueInput.value.length<=4){
+        alert("Nazwa gracza musi zawierać minimum 5 znaków");
+    }
+
+    else if(valueInput.value.length>=11){
+        alert("Nazwa gracza musi zawierać maksimum 10 znaków");
+    }
+    
+    else{
 
         localStorage.setItem("playerName", valueInput.value);
 
