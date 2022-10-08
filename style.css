@@ -1,5 +1,9 @@
+body{
+    background-color: #669966;
+}
+
 #header{
-  display: grid;   
+  display: grid; 
 }
 
 .pkt{
@@ -21,7 +25,7 @@
 }
 
 #new-game:hover{
-    background-color: wheat;
+    background-color: #CCFFCC;
     color: black;
     text-shadow: 5px 5px 15px black;
 }
@@ -37,7 +41,7 @@
 }
 
 .acction-button:hover{
-    background-color: wheat;
+    background-color: #CCFFCC;
     color: black;
     text-shadow: 5px 5px 15px black;
 }
@@ -54,12 +58,12 @@
 
 #player{
     font-size: 3vw;
-    color: green;
+    color: greenyellow;
 }
 
 #result{
     font-size: 3vw;
-    color: red;
+    color: blueviolet;
 }
 
 #wynik{
@@ -70,6 +74,11 @@
     font-size: 2vw;
     text-align: center;
     border-radius: 15px;
+    background-color: #CCFFCC;
+}
+
+#player-name:focus{
+    outline-style: none;
 }
 
 #addName{
@@ -83,7 +92,7 @@
 }
 
 #addName:hover{
-    background-color: wheat;
+    background-color: #CCFFCC;
     color: black;
     text-shadow: 5px 5px 15px black;
 }
