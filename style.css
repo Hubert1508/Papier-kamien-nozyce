@@ -1,0 +1,64 @@
+#header{
+  display: grid;   
+}
+
+.acction-button{
+    font-size: 5vw;
+    border-radius: 10px;
+    transition: .4s;
+    background-color: black;
+    cursor: pointer;
+    color: white;
+    text-shadow: 5px 5px 15px white;
+}
+
+.acction-button:hover{
+    background-color: wheat;
+    color: black;
+    text-shadow: 5px 5px 15px black;
+}
+
+.options{
+    height: 10vh;
+    text-align: center
+}
+
+.informations{
+    height: 10vh;
+    text-align: center
+}
+
+#player{
+    font-size: 5vw;
+    color: green;
+}
+
+#result{
+    font-size: 5vw;
+    color: red;
+}
+
+#wynik{
+    font-size: 5vw;
+}
+
+#player-name{
+    font-size: 2vw;
+    text-align: center;
+}
+
+#addName{
+    font-size: 2vw;
+    border-radius: 10px;
+    transition: .4s;
+    background-color: black;
+    cursor: pointer;
+    color: white;
+    text-shadow: 5px 5px 15px white;
+}
+
+#addName:hover{
+    background-color: wheat;
+    color: black;
+    text-shadow: 5px 5px 15px black;
+}
